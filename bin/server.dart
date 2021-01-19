@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import 'package:functions_framework/serve.dart';
-import 'package:cloudevent_template/functions.dart' as function_library;
+import 'package:test_cloud_events/functions.dart' as function_library;
 
 Future<void> main(List<String> args) async {
   await serve(args, _functionTargets);
