@@ -22,7 +22,11 @@ Future<void> main(List<String> args) async {
 
 const _functionTargets = <FunctionTarget>{
   FunctionTarget.cloudEventWithContext(
-    'function',
-    function_library.function,
+    'cloudEventFunction',
+    function_library.cloudEventFunction,
+  ),
+  FunctionTarget.http(
+    'httpFunction',
+    function_library.httpFunction,
   ),
 };
